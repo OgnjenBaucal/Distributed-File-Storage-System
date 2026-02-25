@@ -1,3 +1,0 @@
-﻿# Distributed-File-Storage-System
-A peer-to-peer chunk-based storage system with replication and fault tolerance.
-
