@@ -34,7 +34,8 @@ public class ManifestStorage {
             return file;
         } catch (Exception e) {
             LOGGER.error("Failed loading file manifest: {}", fileID);
-            throw new StorageException("Unable to load file manifest", e);
+            //throw new StorageException("Unable to load file manifest", e);
+            throw new StorageException(e.getMessage(), e);
         }
     }
     public static boolean exists(String fileID) {
